@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="/2.min.css" />
+    <title>Effects</title>
+</head>
+<body class="ff-serif pa-8">
+
+    <header class="tl mv-8 pv-6 br-b-1 br-black mx-w-full">
+        <span class="dib"><span class="va-m fs-6 fw-100 fc-black-70">2</span><span class="fs-3"><em>css</em></span></span>
+        <nav>
+            &laquo; <a class="dib pr-3" href="index.html">Index</a>
+            <a class="dib pr-3" href="#synopsis">Synopsis</a>
+            <a class="dib pr-3" href="#usage">Usage</a>
+                        <a class="dib pr-3" href="#examples">Examples</a>
+                    </nav>
+    </header>
+
+    <main>
+        <h1>Effects</h1>
+        
+                        <p>Effects supports media query modifiers (xs:, sm:, md:, lg:, xl:)</p>
+                        
+        <h2 id="synopsis">Synopsis</h2>
+        <dl>
+                                <dt>
+                fx                            </dt>
+            <dd>{<br>&emsp;transition-property: background-color,border-color,color,fill,stroke,opacity,box-shadow,transform<br>}
+            </dd>
+                                <dt>
+                fx-r                            </dt>
+            <dd>{<br>&emsp;transform-translate-x: 0;<br>&emsp;transform-translate-y: 0;<br>&emsp;transform-rotate: 0;<br>&emsp;transform-skew-x: 0;<br>&emsp;transform-skew-y: 0;<br>&emsp;transform-scale-x: 1;<br>&emsp;transform-scale-y: 1;<br>}
+            </dd>
+                                <dt>
+                fx-[target]                                    <em class="fc-black-60">
+                        (background<span class="tu">-c</span>olor,border-color,color,fill,stroke, <span class="tu">o</span>pacity, <span class="tu">s</span>hadow, <span class="tu">t</span>ransform)                    </em>
+                            </dt>
+            <dd>{<br>&emsp;transition-property: [target]<br>}
+            </dd>
+                                <dt>
+                fx-mv-[dir]-[scale]                                    <em class="fc-black-60">
+                        (<span class="tu">x</span>, <span class="tu">y</span>), (0-19)                    </em>
+                            </dt>
+            <dd>{<br>&emsp;transform: translate[dir]([scale]);<br>}
+            </dd>
+                                <dt>
+                fx-sc-[scale]                                    <em class="fc-black-60">
+                        (0-200)                    </em>
+                            </dt>
+            <dd>{<br>&emsp;transform: scale([scale], [scale]);<br>}
+            </dd>
+                                <dt>
+                fx-rt-[angle]                                    <em class="fc-black-60">
+                        (0-360)                    </em>
+                            </dt>
+            <dd>{<br>&emsp;transform: rotate([angle]deg);<br>}
+            </dd>
+                                <dt>
+                -fx-rt-[angle]                                    <em class="fc-black-60">
+                        (0-360)                    </em>
+                            </dt>
+            <dd>{<br>&emsp;transform: rotate(-[angle]deg);<br>}
+            </dd>
+                                <dt>
+                fx-o-[position]                                    <em class="fc-black-60">
+                        (<span class="tu">c</span>enter, <span class="tu">t</span>op, <span class="tu">t</span>op <span class="tu">r</span>ight, <span class="tu">r</span>ight, <span class="tu">b</span>ottom <span class="tu">r</span>ight, <span class="tu">b</span>ottom, <span class="tu">b</span>ottom <span class="tu">l</span>eft, <span class="tu">l</span>eft, <span class="tu">t</span>op <span class="tu">l</span>eft)                    </em>
+                            </dt>
+            <dd>{<br>&emsp;transform-origin: [position];<br>}
+            </dd>
+                                <dt>
+                fx-dt-[duration]                                    <em class="fc-black-60">
+                        (0-1000)                    </em>
+                            </dt>
+            <dd>{<br>&emsp;transition-duration: [duration]ms;<br>}
+            </dd>
+                                <dt>
+                fx-dd-[duration]                                    <em class="fc-black-60">
+                        (0-1000)                    </em>
+                            </dt>
+            <dd>{<br>&emsp;transition-delay: [duration]ms;<br>}
+            </dd>
+                                <dt>
+                fx-e[ease]                                    <em class="fc-black-60">
+                        (<span class="tu">l</span>inear, cub<span class="tu">i</span>c-bezier(.4,0,1,1), cubic-bezier(0,0,.2,1), cub<span class="tu">i</span>c-bezier(.4,0,.2,1))                    </em>
+                            </dt>
+            <dd>{<br>&emsp;transition-timing-function: [ease];<br>}
+            </dd>
+                </dl>
+
+        <h2 id="usage">Usage</h2>
+                <h3>Enable effects</h3>
+        <pre>fx</pre>
+                <h3>Reset effects</h3>
+        <pre>fx-r</pre>
+                <h3>Enable selected effects</h3>
+        <pre>fx-c
+fx-o
+fx-s
+fx-t</pre>
+                <h3>Move</h3>
+        <pre>fx-mv-x-[0-19]
+fx-mv-y-[0-19]</pre>
+                <h3>Scale</h3>
+        <pre>fx-sc-[0-200]</pre>
+                <h3>Rotate right</h3>
+        <pre>fx-rt-[0-360]</pre>
+                <h3>Rotate left</h3>
+        <pre>-fx-rt-[0-360]</pre>
+                <h3>Origin</h3>
+        <pre>fx-o-c
+fx-o-t
+fx-o-tr
+fx-o-r
+fx-o-br
+fx-o-b
+fx-o-bl
+fx-o-l
+fx-o-tl</pre>
+                <h3>Transition duration</h3>
+        <pre>fx-dt-[0-1000]</pre>
+                <h3>Transition delay</h3>
+        <pre>fx-dd-[0-1000]</pre>
+                <h3>Transition easing</h3>
+        <pre>fx-el
+fx-ei
+fx-eo
+fx-eio</pre>
+        
+                <h2 id="examples">Examples</h2>
+                        <h4 class="pb-4 br-b-1 br-black-70">Move</h4>
+                <div class="pa-8 mv-1 bg-black-30">
+            
+                <span class="db fx-o-l fx-mv-x-3">fx-mv-x-3</span>
+                    </div>
+                        <h4 class="pb-4 br-b-1 br-black-70">Scale</h4>
+                <div class="pa-8 mv-1">
+            
+                <span class="db fx-o-l fx-sc-75">fx-sc-75</span>
+                <span class="db fx-o-l fx-sc-150">fx-sc-150</span>
+                    </div>
+                        <h4 class="pb-4 br-b-1 br-black-70">Rotate</h4>
+                <div class="pa-8 mv-1">
+            
+                <span class="db fx-o-l fx-rt-45">fx-rt-45</span>
+                    </div>
+                    </main>
+
+    <footer class="tr mv-12 pv-8 br-t-1 br-black w-full mx-w-full">
+        <div class="fl-r">
+            <em>A project by @indgy</em>
+        </div>
+        <nav class="fl-l">
+            &laquo; <a class="dib pr-3" href="index.html">Index</a>
+            <a class="dib pr-3" href="#synopsis">Synopsis</a>
+            <a class="dib pr-3" href="#usage">Usage</a>
+                        <a class="dib pr-3" href="#examples">Examples</a>
+                    </nav>
+    </footer>
+
+</body>
+</html>

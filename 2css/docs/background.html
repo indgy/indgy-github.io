@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="/2.min.css" />
+    <title>Background</title>
+</head>
+<body class="ff-serif pa-8">
+
+    <header class="tl mv-8 pv-6 br-b-1 br-black mx-w-full">
+        <span class="dib"><span class="va-m fs-6 fw-100 fc-black-70">2</span><span class="fs-3"><em>css</em></span></span>
+        <nav>
+            &laquo; <a class="dib pr-3" href="index.html">Index</a>
+            <a class="dib pr-3" href="#synopsis">Synopsis</a>
+            <a class="dib pr-3" href="#usage">Usage</a>
+                        <a class="dib pr-3" href="#examples">Examples</a>
+                    </nav>
+    </header>
+
+    <main>
+        <h1>Background</h1>
+        
+                        <p>Background supports media query modifiers (xs:, sm:, md:, lg:, xl:)</p>
+                        
+        <h2 id="synopsis">Synopsis</h2>
+        <dl>
+                                <dt>
+                bg-[attach]                                    <em class="fc-black-60">
+                        (<span class="tu">f</span><span class="tu">i</span><span class="tu">x</span>ed, <span class="tu">l</span><span class="tu">o</span><span class="tu">c</span>al, <span class="tu">s</span><span class="tu">c</span><span class="tu">r</span>oll)                    </em>
+                            </dt>
+            <dd>{<br>&emsp;background-attachment: [attach];<br>}
+            </dd>
+                                <dt>
+                bg-[position]                                    <em class="fc-black-60">
+                        (<span class="tu">c</span>enter center, cen<span class="tu">t</span>er top, <span class="tu">t</span>op <span class="tu">r</span>ight, cente<span class="tu">r</span> right, <span class="tu">b</span>ottom <span class="tu">r</span>ight, center <span class="tu">b</span>ottom, <span class="tu">b</span>ottom <span class="tu">l</span>eft, center <span class="tu">l</span>eft, <span class="tu">t</span>op <span class="tu">l</span>eft)                    </em>
+                            </dt>
+            <dd>{<br>&emsp;background-position: [position];<br>}
+            </dd>
+                                <dt>
+                bg-[repeat]                                    <em class="fc-black-60">
+                        (<span class="tu">r</span>e<span class="tu">p</span>eat, <span class="tu">r</span>epeat<span class="tu">-x</span>, <span class="tu">r</span>epeat<span class="tu">-y</span>, <span class="tu">n</span>o-<span class="tu">r</span>epeat, <span class="tu">n</span>o-<span class="tu">r</span>epeat)                    </em>
+                            </dt>
+            <dd>{<br>&emsp;background-repeat: [repeat];<br>}
+            </dd>
+                                <dt>
+                bg-[size]                                    <em class="fc-black-60">
+                        (<span class="tu">a</span><span class="tu">u</span><span class="tu">t</span><span class="tu">o</span>, <span class="tu">c</span><span class="tu">o</span><span class="tu">v</span>er, <span class="tu">c</span><span class="tu">o</span><span class="tu">n</span>tain)                    </em>
+                            </dt>
+            <dd>{<br>&emsp;background-size: [size];<br>}
+            </dd>
+                                <dt>
+                bg-[color]-[scale]                                    <em class="fc-black-60">
+                        (01-100)                    </em>
+                            </dt>
+            <dd>{<br>&emsp;background-color: [color];<br>}
+            </dd>
+                                <dt>
+                bg-[color]-[scale]                                    <em class="fc-black-60">
+                        (0-9)                    </em>
+                            </dt>
+            <dd>{<br>&emsp;background-color: [color];<br>}
+            </dd>
+                                <dt>
+                -bg-[color]-[scale]                                    <em class="fc-black-60">
+                        (0-9)                    </em>
+                            </dt>
+            <dd>{<br>&emsp;background-color: [color];<br>}
+            </dd>
+                </dl>
+
+        <h2 id="usage">Usage</h2>
+                <h3>Background attachment</h3>
+        <pre>bg-fix
+bg-loc
+bg-scr</pre>
+                <h3>Background position</h3>
+        <pre>bg-c
+bg-t
+bg-tr
+bg-r
+bg-br
+bg-b
+bg-bl
+bg-l
+bg-tl</pre>
+                <h3>Background repeat</h3>
+        <pre>bg-rp
+bg-rx
+bg-ry
+bg-rn
+bg-nr</pre>
+                <h3>Background size</h3>
+        <pre>bg-auto
+bg-cov
+bg-con</pre>
+                <h3>Background colour, alpha</h3>
+        <pre>bg-[color]-[01-100]</pre>
+                <h3>Background colour, lighter</h3>
+        <pre>bg-[color]-[0-9]</pre>
+                <h3>Background colour, darker</h3>
+        <pre>-bg-[color]-[0-9]</pre>
+        
+                <h2 id="examples">Examples</h2>
+                        <h4 class="pb-4 br-b-1 br-black-70">Solid colours, lighter [0 - 9]</h4>
+                <div class="pa-8 mv-1">
+            <p class="pb-2">Lighter colours are created using the Sass lighten() function</p><div class="fb fb-c sm:fb-r fb-js"><div class="pa-4 mn-w-40% md:mn-w-33% lg:mn-w-25%"><pre class="dib">bg-black-[0-9]</pre></div><div class="pa-4 bg-black-0"></div><div class="pa-4 bg-black-1"></div><div class="pa-4 bg-black-2"></div><div class="pa-4 bg-black-3"></div><div class="pa-4 bg-black-4"></div><div class="pa-4 bg-black-5"></div><div class="pa-4 bg-black-6"></div><div class="pa-4 bg-black-7"></div><div class="pa-4 bg-black-8"></div><div class="pa-4 bg-black-9"></div></div><div class="fb fb-c sm:fb-r fb-js"><div class="pa-4 mn-w-40% md:mn-w-33% lg:mn-w-25%"><pre class="dib">bg-white-[0-9]</pre></div><div class="pa-4 bg-white-0"></div><div class="pa-4 bg-white-1"></div><div class="pa-4 bg-white-2"></div><div class="pa-4 bg-white-3"></div><div class="pa-4 bg-white-4"></div><div class="pa-4 bg-white-5"></div><div class="pa-4 bg-white-6"></div><div class="pa-4 bg-white-7"></div><div class="pa-4 bg-white-8"></div><div class="pa-4 bg-white-9"></div></div><div class="fb fb-c sm:fb-r fb-js"><div class="pa-4 mn-w-40% md:mn-w-33% lg:mn-w-25%"><pre class="dib">bg-blue-[0-9]</pre></div><div class="pa-4 bg-blue-0"></div><div class="pa-4 bg-blue-1"></div><div class="pa-4 bg-blue-2"></div><div class="pa-4 bg-blue-3"></div><div class="pa-4 bg-blue-4"></div><div class="pa-4 bg-blue-5"></div><div class="pa-4 bg-blue-6"></div><div class="pa-4 bg-blue-7"></div><div class="pa-4 bg-blue-8"></div><div class="pa-4 bg-blue-9"></div></div><div class="fb fb-c sm:fb-r fb-js"><div class="pa-4 mn-w-40% md:mn-w-33% lg:mn-w-25%"><pre class="dib">bg-purple-[0-9]</pre></div><div class="pa-4 bg-purple-0"></div><div class="pa-4 bg-purple-1"></div><div class="pa-4 bg-purple-2"></div><div class="pa-4 bg-purple-3"></div><div class="pa-4 bg-purple-4"></div><div class="pa-4 bg-purple-5"></div><div class="pa-4 bg-purple-6"></div><div class="pa-4 bg-purple-7"></div><div class="pa-4 bg-purple-8"></div><div class="pa-4 bg-purple-9"></div></div><div class="fb fb-c sm:fb-r fb-js"><div class="pa-4 mn-w-40% md:mn-w-33% lg:mn-w-25%"><pre class="dib">bg-pink-[0-9]</pre></div><div class="pa-4 bg-pink-0"></div><div class="pa-4 bg-pink-1"></div><div class="pa-4 bg-pink-2"></div><div class="pa-4 bg-pink-3"></div><div class="pa-4 bg-pink-4"></div><div class="pa-4 bg-pink-5"></div><div class="pa-4 bg-pink-6"></div><div class="pa-4 bg-pink-7"></div><div class="pa-4 bg-pink-8"></div><div class="pa-4 bg-pink-9"></div></div><div class="fb fb-c sm:fb-r fb-js"><div class="pa-4 mn-w-40% md:mn-w-33% lg:mn-w-25%"><pre class="dib">bg-red-[0-9]</pre></div><div class="pa-4 bg-red-0"></div><div class="pa-4 bg-red-1"></div><div class="pa-4 bg-red-2"></div><div class="pa-4 bg-red-3"></div><div class="pa-4 bg-red-4"></div><div class="pa-4 bg-red-5"></div><div class="pa-4 bg-red-6"></div><div class="pa-4 bg-red-7"></div><div class="pa-4 bg-red-8"></div><div class="pa-4 bg-red-9"></div></div><div class="fb fb-c sm:fb-r fb-js"><div class="pa-4 mn-w-40% md:mn-w-33% lg:mn-w-25%"><pre class="dib">bg-orange-[0-9]</pre></div><div class="pa-4 bg-orange-0"></div><div class="pa-4 bg-orange-1"></div><div class="pa-4 bg-orange-2"></div><div class="pa-4 bg-orange-3"></div><div class="pa-4 bg-orange-4"></div><div class="pa-4 bg-orange-5"></div><div class="pa-4 bg-orange-6"></div><div class="pa-4 bg-orange-7"></div><div class="pa-4 bg-orange-8"></div><div class="pa-4 bg-orange-9"></div></div><div class="fb fb-c sm:fb-r fb-js"><div class="pa-4 mn-w-40% md:mn-w-33% lg:mn-w-25%"><pre class="dib">bg-yellow-[0-9]</pre></div><div class="pa-4 bg-yellow-0"></div><div class="pa-4 bg-yellow-1"></div><div class="pa-4 bg-yellow-2"></div><div class="pa-4 bg-yellow-3"></div><div class="pa-4 bg-yellow-4"></div><div class="pa-4 bg-yellow-5"></div><div class="pa-4 bg-yellow-6"></div><div class="pa-4 bg-yellow-7"></div><div class="pa-4 bg-yellow-8"></div><div class="pa-4 bg-yellow-9"></div></div><div class="fb fb-c sm:fb-r fb-js"><div class="pa-4 mn-w-40% md:mn-w-33% lg:mn-w-25%"><pre class="dib">bg-green-[0-9]</pre></div><div class="pa-4 bg-green-0"></div><div class="pa-4 bg-green-1"></div><div class="pa-4 bg-green-2"></div><div class="pa-4 bg-green-3"></div><div class="pa-4 bg-green-4"></div><div class="pa-4 bg-green-5"></div><div class="pa-4 bg-green-6"></div><div class="pa-4 bg-green-7"></div><div class="pa-4 bg-green-8"></div><div class="pa-4 bg-green-9"></div></div></div>        </div>
+                        <h4 class="pb-4 br-b-1 br-black-70">Solid colours, darker [0 - -9]</h4>
+                <div class="pa-8 mv-1">
+            <p class="pb-2">Darker colours are created using the Sass darken() function</p><div class="fb fb-c sm:fb-r fb-js"><div class="pa-4 mn-w-40% md:mn-w-33% lg:mn-w-25%"><pre class="dib">bg-black-[0-9]</pre></div><div class="pa-4 bg-black"></div><div class="pa-4 -bg-black-1"></div><div class="pa-4 -bg-black-2"></div><div class="pa-4 -bg-black-3"></div><div class="pa-4 -bg-black-4"></div><div class="pa-4 -bg-black-5"></div><div class="pa-4 -bg-black-6"></div><div class="pa-4 -bg-black-7"></div><div class="pa-4 -bg-black-8"></div><div class="pa-4 -bg-black-9"></div></div><div class="fb fb-c sm:fb-r fb-js"><div class="pa-4 mn-w-40% md:mn-w-33% lg:mn-w-25%"><pre class="dib">bg-white-[0-9]</pre></div><div class="pa-4 bg-white"></div><div class="pa-4 -bg-white-1"></div><div class="pa-4 -bg-white-2"></div><div class="pa-4 -bg-white-3"></div><div class="pa-4 -bg-white-4"></div><div class="pa-4 -bg-white-5"></div><div class="pa-4 -bg-white-6"></div><div class="pa-4 -bg-white-7"></div><div class="pa-4 -bg-white-8"></div><div class="pa-4 -bg-white-9"></div></div><div class="fb fb-c sm:fb-r fb-js"><div class="pa-4 mn-w-40% md:mn-w-33% lg:mn-w-25%"><pre class="dib">bg-blue-[0-9]</pre></div><div class="pa-4 bg-blue"></div><div class="pa-4 -bg-blue-1"></div><div class="pa-4 -bg-blue-2"></div><div class="pa-4 -bg-blue-3"></div><div class="pa-4 -bg-blue-4"></div><div class="pa-4 -bg-blue-5"></div><div class="pa-4 -bg-blue-6"></div><div class="pa-4 -bg-blue-7"></div><div class="pa-4 -bg-blue-8"></div><div class="pa-4 -bg-blue-9"></div></div><div class="fb fb-c sm:fb-r fb-js"><div class="pa-4 mn-w-40% md:mn-w-33% lg:mn-w-25%"><pre class="dib">bg-purple-[0-9]</pre></div><div class="pa-4 bg-purple"></div><div class="pa-4 -bg-purple-1"></div><div class="pa-4 -bg-purple-2"></div><div class="pa-4 -bg-purple-3"></div><div class="pa-4 -bg-purple-4"></div><div class="pa-4 -bg-purple-5"></div><div class="pa-4 -bg-purple-6"></div><div class="pa-4 -bg-purple-7"></div><div class="pa-4 -bg-purple-8"></div><div class="pa-4 -bg-purple-9"></div></div><div class="fb fb-c sm:fb-r fb-js"><div class="pa-4 mn-w-40% md:mn-w-33% lg:mn-w-25%"><pre class="dib">bg-pink-[0-9]</pre></div><div class="pa-4 bg-pink"></div><div class="pa-4 -bg-pink-1"></div><div class="pa-4 -bg-pink-2"></div><div class="pa-4 -bg-pink-3"></div><div class="pa-4 -bg-pink-4"></div><div class="pa-4 -bg-pink-5"></div><div class="pa-4 -bg-pink-6"></div><div class="pa-4 -bg-pink-7"></div><div class="pa-4 -bg-pink-8"></div><div class="pa-4 -bg-pink-9"></div></div><div class="fb fb-c sm:fb-r fb-js"><div class="pa-4 mn-w-40% md:mn-w-33% lg:mn-w-25%"><pre class="dib">bg-red-[0-9]</pre></div><div class="pa-4 bg-red"></div><div class="pa-4 -bg-red-1"></div><div class="pa-4 -bg-red-2"></div><div class="pa-4 -bg-red-3"></div><div class="pa-4 -bg-red-4"></div><div class="pa-4 -bg-red-5"></div><div class="pa-4 -bg-red-6"></div><div class="pa-4 -bg-red-7"></div><div class="pa-4 -bg-red-8"></div><div class="pa-4 -bg-red-9"></div></div><div class="fb fb-c sm:fb-r fb-js"><div class="pa-4 mn-w-40% md:mn-w-33% lg:mn-w-25%"><pre class="dib">bg-orange-[0-9]</pre></div><div class="pa-4 bg-orange"></div><div class="pa-4 -bg-orange-1"></div><div class="pa-4 -bg-orange-2"></div><div class="pa-4 -bg-orange-3"></div><div class="pa-4 -bg-orange-4"></div><div class="pa-4 -bg-orange-5"></div><div class="pa-4 -bg-orange-6"></div><div class="pa-4 -bg-orange-7"></div><div class="pa-4 -bg-orange-8"></div><div class="pa-4 -bg-orange-9"></div></div><div class="fb fb-c sm:fb-r fb-js"><div class="pa-4 mn-w-40% md:mn-w-33% lg:mn-w-25%"><pre class="dib">bg-yellow-[0-9]</pre></div><div class="pa-4 bg-yellow"></div><div class="pa-4 -bg-yellow-1"></div><div class="pa-4 -bg-yellow-2"></div><div class="pa-4 -bg-yellow-3"></div><div class="pa-4 -bg-yellow-4"></div><div class="pa-4 -bg-yellow-5"></div><div class="pa-4 -bg-yellow-6"></div><div class="pa-4 -bg-yellow-7"></div><div class="pa-4 -bg-yellow-8"></div><div class="pa-4 -bg-yellow-9"></div></div><div class="fb fb-c sm:fb-r fb-js"><div class="pa-4 mn-w-40% md:mn-w-33% lg:mn-w-25%"><pre class="dib">bg-green-[0-9]</pre></div><div class="pa-4 bg-green"></div><div class="pa-4 -bg-green-1"></div><div class="pa-4 -bg-green-2"></div><div class="pa-4 -bg-green-3"></div><div class="pa-4 -bg-green-4"></div><div class="pa-4 -bg-green-5"></div><div class="pa-4 -bg-green-6"></div><div class="pa-4 -bg-green-7"></div><div class="pa-4 -bg-green-8"></div><div class="pa-4 -bg-green-9"></div></div></div>        </div>
+                        <h4 class="pb-4 br-b-1 br-black-70">Alpha scale [01-100]</h4>
+                <div class="pa-8 mv-1">
+            <div class="fb fb-c sm:fb-r fb-js"><div class="pa-4 dib mn-w-40% md:mn-w-33% lg:mn-w-25%"><pre class="dib">bg-black-[01-100]</pre></div><div class="pa-4 bg-black-100"></div><div class="pa-4 bg-black-90"></div><div class="pa-4 bg-black-80"></div><div class="pa-4 bg-black-70"></div><div class="pa-4 bg-black-60"></div><div class="pa-4 bg-black-50"></div><div class="pa-4 bg-black-40"></div><div class="pa-4 bg-black-30"></div><div class="pa-4 bg-black-20"></div><div class="pa-4 bg-black-10"></div><div class="pa-4 bg-black-05"></div><div class="pa-4 bg-black-01"></div></div><div class="fb fb-c sm:fb-r fb-js"><div class="pa-4 dib mn-w-40% md:mn-w-33% lg:mn-w-25%"><pre class="dib">bg-white-[01-100]</pre></div><div class="pa-4 bg-white-100"></div><div class="pa-4 bg-white-90"></div><div class="pa-4 bg-white-80"></div><div class="pa-4 bg-white-70"></div><div class="pa-4 bg-white-60"></div><div class="pa-4 bg-white-50"></div><div class="pa-4 bg-white-40"></div><div class="pa-4 bg-white-30"></div><div class="pa-4 bg-white-20"></div><div class="pa-4 bg-white-10"></div><div class="pa-4 bg-white-05"></div><div class="pa-4 bg-white-01"></div></div><div class="fb fb-c sm:fb-r fb-js"><div class="pa-4 dib mn-w-40% md:mn-w-33% lg:mn-w-25%"><pre class="dib">bg-blue-[01-100]</pre></div><div class="pa-4 bg-blue-100"></div><div class="pa-4 bg-blue-90"></div><div class="pa-4 bg-blue-80"></div><div class="pa-4 bg-blue-70"></div><div class="pa-4 bg-blue-60"></div><div class="pa-4 bg-blue-50"></div><div class="pa-4 bg-blue-40"></div><div class="pa-4 bg-blue-30"></div><div class="pa-4 bg-blue-20"></div><div class="pa-4 bg-blue-10"></div><div class="pa-4 bg-blue-05"></div><div class="pa-4 bg-blue-01"></div></div><div class="fb fb-c sm:fb-r fb-js"><div class="pa-4 dib mn-w-40% md:mn-w-33% lg:mn-w-25%"><pre class="dib">bg-purple-[01-100]</pre></div><div class="pa-4 bg-purple-100"></div><div class="pa-4 bg-purple-90"></div><div class="pa-4 bg-purple-80"></div><div class="pa-4 bg-purple-70"></div><div class="pa-4 bg-purple-60"></div><div class="pa-4 bg-purple-50"></div><div class="pa-4 bg-purple-40"></div><div class="pa-4 bg-purple-30"></div><div class="pa-4 bg-purple-20"></div><div class="pa-4 bg-purple-10"></div><div class="pa-4 bg-purple-05"></div><div class="pa-4 bg-purple-01"></div></div><div class="fb fb-c sm:fb-r fb-js"><div class="pa-4 dib mn-w-40% md:mn-w-33% lg:mn-w-25%"><pre class="dib">bg-pink-[01-100]</pre></div><div class="pa-4 bg-pink-100"></div><div class="pa-4 bg-pink-90"></div><div class="pa-4 bg-pink-80"></div><div class="pa-4 bg-pink-70"></div><div class="pa-4 bg-pink-60"></div><div class="pa-4 bg-pink-50"></div><div class="pa-4 bg-pink-40"></div><div class="pa-4 bg-pink-30"></div><div class="pa-4 bg-pink-20"></div><div class="pa-4 bg-pink-10"></div><div class="pa-4 bg-pink-05"></div><div class="pa-4 bg-pink-01"></div></div><div class="fb fb-c sm:fb-r fb-js"><div class="pa-4 dib mn-w-40% md:mn-w-33% lg:mn-w-25%"><pre class="dib">bg-red-[01-100]</pre></div><div class="pa-4 bg-red-100"></div><div class="pa-4 bg-red-90"></div><div class="pa-4 bg-red-80"></div><div class="pa-4 bg-red-70"></div><div class="pa-4 bg-red-60"></div><div class="pa-4 bg-red-50"></div><div class="pa-4 bg-red-40"></div><div class="pa-4 bg-red-30"></div><div class="pa-4 bg-red-20"></div><div class="pa-4 bg-red-10"></div><div class="pa-4 bg-red-05"></div><div class="pa-4 bg-red-01"></div></div><div class="fb fb-c sm:fb-r fb-js"><div class="pa-4 dib mn-w-40% md:mn-w-33% lg:mn-w-25%"><pre class="dib">bg-orange-[01-100]</pre></div><div class="pa-4 bg-orange-100"></div><div class="pa-4 bg-orange-90"></div><div class="pa-4 bg-orange-80"></div><div class="pa-4 bg-orange-70"></div><div class="pa-4 bg-orange-60"></div><div class="pa-4 bg-orange-50"></div><div class="pa-4 bg-orange-40"></div><div class="pa-4 bg-orange-30"></div><div class="pa-4 bg-orange-20"></div><div class="pa-4 bg-orange-10"></div><div class="pa-4 bg-orange-05"></div><div class="pa-4 bg-orange-01"></div></div><div class="fb fb-c sm:fb-r fb-js"><div class="pa-4 dib mn-w-40% md:mn-w-33% lg:mn-w-25%"><pre class="dib">bg-yellow-[01-100]</pre></div><div class="pa-4 bg-yellow-100"></div><div class="pa-4 bg-yellow-90"></div><div class="pa-4 bg-yellow-80"></div><div class="pa-4 bg-yellow-70"></div><div class="pa-4 bg-yellow-60"></div><div class="pa-4 bg-yellow-50"></div><div class="pa-4 bg-yellow-40"></div><div class="pa-4 bg-yellow-30"></div><div class="pa-4 bg-yellow-20"></div><div class="pa-4 bg-yellow-10"></div><div class="pa-4 bg-yellow-05"></div><div class="pa-4 bg-yellow-01"></div></div><div class="fb fb-c sm:fb-r fb-js"><div class="pa-4 dib mn-w-40% md:mn-w-33% lg:mn-w-25%"><pre class="dib">bg-green-[01-100]</pre></div><div class="pa-4 bg-green-100"></div><div class="pa-4 bg-green-90"></div><div class="pa-4 bg-green-80"></div><div class="pa-4 bg-green-70"></div><div class="pa-4 bg-green-60"></div><div class="pa-4 bg-green-50"></div><div class="pa-4 bg-green-40"></div><div class="pa-4 bg-green-30"></div><div class="pa-4 bg-green-20"></div><div class="pa-4 bg-green-10"></div><div class="pa-4 bg-green-05"></div><div class="pa-4 bg-green-01"></div></div></div>        </div>
+                    </main>
+
+    <footer class="tr mv-12 pv-8 br-t-1 br-black w-full mx-w-full">
+        <div class="fl-r">
+            <em>A project by @indgy</em>
+        </div>
+        <nav class="fl-l">
+            &laquo; <a class="dib pr-3" href="index.html">Index</a>
+            <a class="dib pr-3" href="#synopsis">Synopsis</a>
+            <a class="dib pr-3" href="#usage">Usage</a>
+                        <a class="dib pr-3" href="#examples">Examples</a>
+                    </nav>
+    </footer>
+
+</body>
+</html>

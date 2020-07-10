@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="/2.min.css" />
+    <title>Fonts</title>
+</head>
+<body class="ff-serif pa-8">
+
+    <header class="tl mv-8 pv-6 br-b-1 br-black mx-w-full">
+        <span class="dib"><span class="va-m fs-6 fw-100 fc-black-70">2</span><span class="fs-3"><em>css</em></span></span>
+        <nav>
+            &laquo; <a class="dib pr-3" href="index.html">Index</a>
+            <a class="dib pr-3" href="#synopsis">Synopsis</a>
+            <a class="dib pr-3" href="#usage">Usage</a>
+                        <a class="dib pr-3" href="#examples">Examples</a>
+                    </nav>
+    </header>
+
+    <main>
+        <h1>Fonts</h1>
+        
+        Font sizes use the <em>type</em> scale, colours use the <em>solid color (0-9)</em> or the <em>opacity (01-100)</em> scale.                <p>Fonts supports media query modifiers (xs:, sm:, md:, lg:, xl:)</p>
+                        
+        <h2 id="synopsis">Synopsis</h2>
+        <dl>
+                                <dt>
+                fc-[color]-[scale]                                    <em class="fc-black-60">
+                        (<span class="tu">b</span><span class="tu">l</span><span class="tu">a</span><span class="tu">c</span><span class="tu">k</span>, <span class="tu">w</span><span class="tu">h</span><span class="tu">i</span><span class="tu">t</span><span class="tu">e</span>, <span class="tu">b</span><span class="tu">r</span><span class="tu">o</span><span class="tu">w</span><span class="tu">n</span>, <span class="tu">b</span><span class="tu">l</span><span class="tu">u</span><span class="tu">e</span>, <span class="tu">p</span><span class="tu">u</span><span class="tu">r</span><span class="tu">p</span><span class="tu">l</span><span class="tu">e</span>, <span class="tu">p</span><span class="tu">i</span><span class="tu">n</span><span class="tu">k</span>, <span class="tu">r</span><span class="tu">e</span><span class="tu">d</span>, <span class="tu">o</span><span class="tu">r</span><span class="tu">a</span><span class="tu">n</span><span class="tu">g</span><span class="tu">e</span>, <span class="tu">y</span><span class="tu">e</span><span class="tu">l</span><span class="tu">l</span><span class="tu">o</span><span class="tu">w</span>, <span class="tu">g</span><span class="tu">r</span><span class="tu">e</span><span class="tu">e</span><span class="tu">n</span>), (0-9)                    </em>
+                            </dt>
+            <dd>{<br>&emsp;color: [color];<br>}
+            </dd>
+                                <dt>
+                -fc-[color]-[scale]                                    <em class="fc-black-60">
+                        (<span class="tu">b</span><span class="tu">l</span><span class="tu">a</span><span class="tu">c</span><span class="tu">k</span>, <span class="tu">w</span><span class="tu">h</span><span class="tu">i</span><span class="tu">t</span><span class="tu">e</span>, <span class="tu">b</span><span class="tu">r</span><span class="tu">o</span><span class="tu">w</span><span class="tu">n</span>, <span class="tu">b</span><span class="tu">l</span><span class="tu">u</span><span class="tu">e</span>, <span class="tu">p</span><span class="tu">u</span><span class="tu">r</span><span class="tu">p</span><span class="tu">l</span><span class="tu">e</span>, <span class="tu">p</span><span class="tu">i</span><span class="tu">n</span><span class="tu">k</span>, <span class="tu">r</span><span class="tu">e</span><span class="tu">d</span>, <span class="tu">o</span><span class="tu">r</span><span class="tu">a</span><span class="tu">n</span><span class="tu">g</span><span class="tu">e</span>, <span class="tu">y</span><span class="tu">e</span><span class="tu">l</span><span class="tu">l</span><span class="tu">o</span><span class="tu">w</span>, <span class="tu">g</span><span class="tu">r</span><span class="tu">e</span><span class="tu">e</span><span class="tu">n</span>), (0-9)                    </em>
+                            </dt>
+            <dd>{<br>&emsp;color: [color];<br>}
+            </dd>
+                                <dt>
+                fc-[color]-[scale]                                    <em class="fc-black-60">
+                        (<span class="tu">b</span><span class="tu">l</span><span class="tu">a</span><span class="tu">c</span><span class="tu">k</span>, <span class="tu">w</span><span class="tu">h</span><span class="tu">i</span><span class="tu">t</span><span class="tu">e</span>, <span class="tu">b</span><span class="tu">r</span><span class="tu">o</span><span class="tu">w</span><span class="tu">n</span>, <span class="tu">b</span><span class="tu">l</span><span class="tu">u</span><span class="tu">e</span>, <span class="tu">p</span><span class="tu">u</span><span class="tu">r</span><span class="tu">p</span><span class="tu">l</span><span class="tu">e</span>, <span class="tu">p</span><span class="tu">i</span><span class="tu">n</span><span class="tu">k</span>, <span class="tu">r</span><span class="tu">e</span><span class="tu">d</span>, <span class="tu">o</span><span class="tu">r</span><span class="tu">a</span><span class="tu">n</span><span class="tu">g</span><span class="tu">e</span>, <span class="tu">y</span><span class="tu">e</span><span class="tu">l</span><span class="tu">l</span><span class="tu">o</span><span class="tu">w</span>, <span class="tu">g</span><span class="tu">r</span><span class="tu">e</span><span class="tu">e</span><span class="tu">n</span>), (01-100)                    </em>
+                            </dt>
+            <dd>{<br>&emsp;color: [color];<br>}
+            </dd>
+                                <dt>
+                ff-[name]                                    <em class="fc-black-60">
+                        (system-ui, <span class="tu">-a</span>pple<span class="tu">-s</span>ystem, Bli<span class="tu">n</span>k<span class="tu">m</span>ac<span class="tu">s</span>ystem<span class="tu">f</span>ont, "<span class="tu">s</span>egoe U<span class="tu">i</span>", <span class="tu">r</span>oboto, "Helvetica <span class="tu">n</span>eue", Arial, "<span class="tu">n</span>oto <span class="tu">s</span>ans", sans<span class="tu">-s</span>erif, "Apple Color <span class="tu">e</span>moji", "<span class="tu">s</span>egoe U<span class="tu">i</span> <span class="tu">e</span>moji", "<span class="tu">s</span>egoe U<span class="tu">i</span> <span class="tu">s</span>ymbol", "<span class="tu">n</span>oto Color <span class="tu">e</span>moji";, Palat<span class="tu">i</span>no, G<span class="tu">e</span>o<span class="tu">r</span>gia, "Lucida Bright", "Book Antiqua", "Time<span class="tu">s</span> <span class="tu">n</span>ew <span class="tu">r</span>oman", Times, seri<span class="tu">f</span>;, <span class="tu">m</span>e<span class="tu">n</span>l<span class="tu">o</span>, <span class="tu">m</span><span class="tu">o</span>naco, Consolas, "Liberation <span class="tu">m</span>ono", "Courier <span class="tu">n</span>ew", <span class="tu">m</span>onospace;)                    </em>
+                            </dt>
+            <dd>{<br>&emsp;font-family: [name];<br>}
+            </dd>
+                                <dt>
+                fs-[scale]                                    <em class="fc-black-60">
+                        (0-9)                    </em>
+                            </dt>
+            <dd>{<br>&emsp;font-size: [scale]rem;<br>}
+            </dd>
+                                <dt>
+                -fs-[scale]                                    <em class="fc-black-60">
+                        (3-1)                    </em>
+                            </dt>
+            <dd>{<br>&emsp;font-size: [scale]rem;<br>}
+            </dd>
+                                <dt>
+                fs-[style]                                    <em class="fc-black-60">
+                        (<span class="tu">i</span>talic, <span class="tu">n</span>ormal)                    </em>
+                            </dt>
+            <dd>{<br>&emsp;font-style: [style];<br>}
+            </dd>
+                                <dt>
+                fw-[weight]                                    <em class="fc-black-60">
+                        (100-900)                    </em>
+                            </dt>
+            <dd>{<br>&emsp;font-weight: [weight];<br>}
+            </dd>
+                </dl>
+
+        <h2 id="usage">Usage</h2>
+                <h3>Font colour, lighter</h3>
+        <pre>fc-black-[0-9]
+fc-white-[0-9]
+fc-brown-[0-9]
+fc-blue-[0-9]
+fc-purple-[0-9]
+fc-pink-[0-9]
+fc-red-[0-9]
+fc-orange-[0-9]
+fc-yellow-[0-9]
+fc-green-[0-9]</pre>
+                <h3>Font colour, darker</h3>
+        <pre>-fc-black-[0-9]
+-fc-white-[0-9]
+-fc-brown-[0-9]
+-fc-blue-[0-9]
+-fc-purple-[0-9]
+-fc-pink-[0-9]
+-fc-red-[0-9]
+-fc-orange-[0-9]
+-fc-yellow-[0-9]
+-fc-green-[0-9]</pre>
+                <h3>Font colour, with alpha</h3>
+        <pre>fc-black-[01-100]
+fc-white-[01-100]
+fc-brown-[01-100]
+fc-blue-[01-100]
+fc-purple-[01-100]
+fc-pink-[01-100]
+fc-red-[01-100]
+fc-orange-[01-100]
+fc-yellow-[01-100]
+fc-green-[01-100]</pre>
+                <h3>Font family</h3>
+        <pre>ff-sans
+ff-serif
+ff-mono</pre>
+                <h3>Font size, larger</h3>
+        <pre>fs-[0-9]</pre>
+                <h3>Font size, smaller</h3>
+        <pre>-fs-[3-1]</pre>
+                <h3>Font style</h3>
+        <pre>fs-i
+fs-n</pre>
+                <h3>Font weight</h3>
+        <pre>fw-[100-900]</pre>
+        
+                <h2 id="examples">Examples</h2>
+                        <h4 class="pb-4 br-b-1 br-black-70">Font colours</h4>
+                <div class="br-b-2 pv-4">
+            
+                <h4>Solids</h4>
+                <div class="fb fb-r fb-jc-v">
+                    <div class="pa-4">
+                        <h6 class="pb-4">Black</h6>
+                        <span class="db fc-black-9">&nbsp;fc-black-9</span>
+                        <span class="db fc-black-8">&nbsp;fc-black-8</span>
+                        <span class="db fc-black-7">&nbsp;fc-black-7</span>
+                        <span class="db fc-black-6">&nbsp;fc-black-6</span>
+                        <span class="db fc-black-5">&nbsp;fc-black-5</span>
+                        <span class="db fc-black-4">&nbsp;fc-black-4</span>
+                        <span class="db fc-black-3">&nbsp;fc-black-3</span>
+                        <span class="db fc-black-2">&nbsp;fc-black-2</span>
+                        <span class="db fc-black-1">&nbsp;fc-black-1</span>
+                        <span class="db fc-black-0">&nbsp;fc-black-0</span>
+                        <span class="db -fc-black-1">-fc-black-1</span>
+                        <span class="db -fc-black-2">-fc-black-2</span>
+                        <span class="db -fc-black-3">-fc-black-3</span>
+                        <span class="db -fc-black-4">-fc-black-4</span>
+                        <span class="db -fc-black-5">-fc-black-5</span>
+                        <span class="db -fc-black-6">-fc-black-6</span>
+                        <span class="db -fc-black-7">-fc-black-7</span>
+                        <span class="db -fc-black-8">-fc-black-8</span>
+                        <span class="db -fc-black-9">-fc-black-9</span>
+                    </div>
+                    <div class="pa-4 bg-black-90">
+                        <h6 class="pb-4 fc-white-0">White</h6>
+                        <span class="db fc-white-9">&nbsp;fc-white-9</span>
+                        <span class="db fc-white-8">&nbsp;fc-white-8</span>
+                        <span class="db fc-white-7">&nbsp;fc-white-7</span>
+                        <span class="db fc-white-6">&nbsp;fc-white-6</span>
+                        <span class="db fc-white-5">&nbsp;fc-white-5</span>
+                        <span class="db fc-white-4">&nbsp;fc-white-4</span>
+                        <span class="db fc-white-3">&nbsp;fc-white-3</span>
+                        <span class="db fc-white-2">&nbsp;fc-white-2</span>
+                        <span class="db fc-white-1">&nbsp;fc-white-1</span>
+                        <span class="db fc-white-0">&nbsp;fc-white-0</span>
+                        <span class="db -fc-white-1">-fc-white-1</span>
+                        <span class="db -fc-white-2">-fc-white-2</span>
+                        <span class="db -fc-white-3">-fc-white-3</span>
+                        <span class="db -fc-white-4">-fc-white-4</span>
+                        <span class="db -fc-white-5">-fc-white-5</span>
+                        <span class="db -fc-white-6">-fc-white-6</span>
+                        <span class="db -fc-white-7">-fc-white-7</span>
+                        <span class="db -fc-white-8">-fc-white-8</span>
+                        <span class="db -fc-white-9">-fc-white-9</span>
+                    </div>
+                    <div class="pa-4">
+                        <h6 class="pb-4">Brown</h6>
+                        <span class="db fc-brown-9">&nbsp;fc-brown-9</span>
+                        <span class="db fc-brown-8">&nbsp;fc-brown-8</span>
+                        <span class="db fc-brown-7">&nbsp;fc-brown-7</span>
+                        <span class="db fc-brown-6">&nbsp;fc-brown-6</span>
+                        <span class="db fc-brown-5">&nbsp;fc-brown-5</span>
+                        <span class="db fc-brown-4">&nbsp;fc-brown-4</span>
+                        <span class="db fc-brown-3">&nbsp;fc-brown-3</span>
+                        <span class="db fc-brown-2">&nbsp;fc-brown-2</span>
+                        <span class="db fc-brown-1">&nbsp;fc-brown-1</span>
+                        <span class="db fc-brown-0">&nbsp;fc-brown-0</span>
+                        <span class="db -fc-brown-1">-fc-brown-1</span>
+                        <span class="db -fc-brown-2">-fc-brown-2</span>
+                        <span class="db -fc-brown-3">-fc-brown-3</span>
+                        <span class="db -fc-brown-4">-fc-brown-4</span>
+                        <span class="db -fc-brown-5">-fc-brown-5</span>
+                        <span class="db -fc-brown-6">-fc-brown-6</span>
+                        <span class="db -fc-brown-7">-fc-brown-7</span>
+                        <span class="db -fc-brown-8">-fc-brown-8</span>
+                        <span class="db -fc-brown-9">-fc-brown-9</span>
+                    </div>
+                    <div class="pa-4">
+                        <h6 class="pb-4">Blue</h6>
+                        <span class="db fc-blue-9">&nbsp;fc-blue-9</span>
+                        <span class="db fc-blue-8">&nbsp;fc-blue-8</span>
+                        <span class="db fc-blue-7">&nbsp;fc-blue-7</span>
+                        <span class="db fc-blue-6">&nbsp;fc-blue-6</span>
+                        <span class="db fc-blue-5">&nbsp;fc-blue-5</span>
+                        <span class="db fc-blue-4">&nbsp;fc-blue-4</span>
+                        <span class="db fc-blue-3">&nbsp;fc-blue-3</span>
+                        <span class="db fc-blue-2">&nbsp;fc-blue-2</span>
+                        <span class="db fc-blue-1">&nbsp;fc-blue-1</span>
+                        <span class="db fc-blue-0">&nbsp;fc-blue-0</span>
+                        <span class="db -fc-blue-1">-fc-blue--1</span>
+                        <span class="db -fc-blue-2">-fc-blue--2</span>
+                        <span class="db -fc-blue-3">-fc-blue--3</span>
+                        <span class="db -fc-blue-4">-fc-blue--4</span>
+                        <span class="db -fc-blue-5">-fc-blue--5</span>
+                        <span class="db -fc-blue-6">-fc-blue--6</span>
+                        <span class="db -fc-blue-7">-fc-blue--7</span>
+                        <span class="db -fc-blue-8">-fc-blue--8</span>
+                        <span class="db -fc-blue-9">-fc-blue--9</span>
+                    </div>
+                    <div class="pa-4">
+                        <h6 class="pb-4">Purple</h6>
+                        <span class="db fc-purple-9">&nbsp;fc-purple-9</span>
+                        <span class="db fc-purple-8">&nbsp;fc-purple-8</span>
+                        <span class="db fc-purple-7">&nbsp;fc-purple-7</span>
+                        <span class="db fc-purple-6">&nbsp;fc-purple-6</span>
+                        <span class="db fc-purple-5">&nbsp;fc-purple-5</span>
+                        <span class="db fc-purple-4">&nbsp;fc-purple-4</span>
+                        <span class="db fc-purple-3">&nbsp;fc-purple-3</span>
+                        <span class="db fc-purple-2">&nbsp;fc-purple-2</span>
+                        <span class="db fc-purple-1">&nbsp;fc-purple-1</span>
+                        <span class="db fc-purple-0">&nbsp;fc-purple-0</span>
+                        <span class="db -fc-purple-1">-fc-purple-1</span>
+                        <span class="db -fc-purple-2">-fc-purple-2</span>
+                        <span class="db -fc-purple-3">-fc-purple-3</span>
+                        <span class="db -fc-purple-4">-fc-purple-4</span>
+                        <span class="db -fc-purple-5">-fc-purple-5</span>
+                        <span class="db -fc-purple-6">-fc-purple-6</span>
+                        <span class="db -fc-purple-7">-fc-purple-7</span>
+                        <span class="db -fc-purple-8">-fc-purple-8</span>
+                        <span class="db -fc-purple-9">-fc-purple-9</span>
+                    </div>
+                    <div class="pa-4">
+                        <h6 class="pb-4">Red</h6>
+                        <span class="db fc-red-9">&nbsp;fc-red-9</span>
+                        <span class="db fc-red-8">&nbsp;fc-red-8</span>
+                        <span class="db fc-red-7">&nbsp;fc-red-7</span>
+                        <span class="db fc-red-6">&nbsp;fc-red-6</span>
+                        <span class="db fc-red-5">&nbsp;fc-red-5</span>
+                        <span class="db fc-red-4">&nbsp;fc-red-4</span>
+                        <span class="db fc-red-3">&nbsp;fc-red-3</span>
+                        <span class="db fc-red-2">&nbsp;fc-red-2</span>
+                        <span class="db fc-red-1">&nbsp;fc-red-1</span>
+                        <span class="db fc-red-0">&nbsp;fc-red-0</span>
+                        <span class="db -fc-red-1">-fc-red-1</span>
+                        <span class="db -fc-red-2">-fc-red-2</span>
+                        <span class="db -fc-red-3">-fc-red-3</span>
+                        <span class="db -fc-red-4">-fc-red-4</span>
+                        <span class="db -fc-red-5">-fc-red-5</span>
+                        <span class="db -fc-red-6">-fc-red-6</span>
+                        <span class="db -fc-red-7">-fc-red-7</span>
+                        <span class="db -fc-red-8">-fc-red-8</span>
+                        <span class="db -fc-red-9">-fc-red-9</span>
+                    </div>
+                    <div class="pa-4">
+                        <h6 class="pb-4">Pink</h6>
+                        <span class="db fc-pink-9">&nbsp;fc-pink-9</span>
+                        <span class="db fc-pink-8">&nbsp;fc-pink-8</span>
+                        <span class="db fc-pink-7">&nbsp;fc-pink-7</span>
+                        <span class="db fc-pink-6">&nbsp;fc-pink-6</span>
+                        <span class="db fc-pink-5">&nbsp;fc-pink-5</span>
+                        <span class="db fc-pink-4">&nbsp;fc-pink-4</span>
+                        <span class="db fc-pink-3">&nbsp;fc-pink-3</span>
+                        <span class="db fc-pink-2">&nbsp;fc-pink-2</span>
+                        <span class="db fc-pink-1">&nbsp;fc-pink-1</span>
+                        <span class="db fc-pink-0">&nbsp;fc-pink-0</span>
+                        <span class="db -fc-pink-1">-fc-pink-1</span>
+                        <span class="db -fc-pink-2">-fc-pink-2</span>
+                        <span class="db -fc-pink-3">-fc-pink-3</span>
+                        <span class="db -fc-pink-4">-fc-pink-4</span>
+                        <span class="db -fc-pink-5">-fc-pink-5</span>
+                        <span class="db -fc-pink-6">-fc-pink-6</span>
+                        <span class="db -fc-pink-7">-fc-pink-7</span>
+                        <span class="db -fc-pink-8">-fc-pink-8</span>
+                        <span class="db -fc-pink-9">-fc-pink-9</span>
+                    </div>
+                    <div class="pa-4">
+                        <h6 class="pb-4">Orange</h6>
+                        <span class="db fc-orange-9">&nbsp;fc-orange-9</span>
+                        <span class="db fc-orange-8">&nbsp;fc-orange-8</span>
+                        <span class="db fc-orange-7">&nbsp;fc-orange-7</span>
+                        <span class="db fc-orange-6">&nbsp;fc-orange-6</span>
+                        <span class="db fc-orange-5">&nbsp;fc-orange-5</span>
+                        <span class="db fc-orange-4">&nbsp;fc-orange-4</span>
+                        <span class="db fc-orange-3">&nbsp;fc-orange-3</span>
+                        <span class="db fc-orange-2">&nbsp;fc-orange-2</span>
+                        <span class="db fc-orange-1">&nbsp;fc-orange-1</span>
+                        <span class="db fc-orange-0">&nbsp;fc-orange-0</span>
+                        <span class="db -fc-orange-1">-fc-orange-1</span>
+                        <span class="db -fc-orange-2">-fc-orange-2</span>
+                        <span class="db -fc-orange-3">-fc-orange-3</span>
+                        <span class="db -fc-orange-4">-fc-orange-4</span>
+                        <span class="db -fc-orange-5">-fc-orange-5</span>
+                        <span class="db -fc-orange-6">-fc-orange-6</span>
+                        <span class="db -fc-orange-7">-fc-orange-7</span>
+                        <span class="db -fc-orange-8">-fc-orange-8</span>
+                        <span class="db -fc-orange-9">-fc-orange-9</span>
+                    </div>
+                    <div class="pa-4">
+                        <h6 class="pb-4">Yellow</h6>
+                        <span class="db fc-yellow-9">&nbsp;fc-yellow-9</span>
+                        <span class="db fc-yellow-8">&nbsp;fc-yellow-8</span>
+                        <span class="db fc-yellow-7">&nbsp;fc-yellow-7</span>
+                        <span class="db fc-yellow-6">&nbsp;fc-yellow-6</span>
+                        <span class="db fc-yellow-5">&nbsp;fc-yellow-5</span>
+                        <span class="db fc-yellow-4">&nbsp;fc-yellow-4</span>
+                        <span class="db fc-yellow-3">&nbsp;fc-yellow-3</span>
+                        <span class="db fc-yellow-2">&nbsp;fc-yellow-2</span>
+                        <span class="db fc-yellow-1">&nbsp;fc-yellow-1</span>
+                        <span class="db fc-yellow-0">&nbsp;fc-yellow-0</span>
+                        <span class="db -fc-yellow-1">-fc-yellow-1</span>
+                        <span class="db -fc-yellow-2">-fc-yellow-2</span>
+                        <span class="db -fc-yellow-3">-fc-yellow-3</span>
+                        <span class="db -fc-yellow-4">-fc-yellow-4</span>
+                        <span class="db -fc-yellow-5">-fc-yellow-5</span>
+                        <span class="db -fc-yellow-6">-fc-yellow-6</span>
+                        <span class="db -fc-yellow-7">-fc-yellow-7</span>
+                        <span class="db -fc-yellow-8">-fc-yellow-8</span>
+                        <span class="db -fc-yellow-9">-fc-yellow-9</span>
+                    </div>
+                    <div class="pa-4">
+                        <h6 class="pb-4">Green</h6>
+                        <span class="db fc-green-9">&nbsp;fc-green-9</span>
+                        <span class="db fc-green-8">&nbsp;fc-green-8</span>
+                        <span class="db fc-green-7">&nbsp;fc-green-7</span>
+                        <span class="db fc-green-6">&nbsp;fc-green-6</span>
+                        <span class="db fc-green-5">&nbsp;fc-green-5</span>
+                        <span class="db fc-green-4">&nbsp;fc-green-4</span>
+                        <span class="db fc-green-3">&nbsp;fc-green-3</span>
+                        <span class="db fc-green-2">&nbsp;fc-green-2</span>
+                        <span class="db fc-green-1">&nbsp;fc-green-1</span>
+                        <span class="db fc-green-0">&nbsp;fc-green-0</span>
+                        <span class="db -fc-green-1">-fc-green-1</span>
+                        <span class="db -fc-green-2">-fc-green-2</span>
+                        <span class="db -fc-green-3">-fc-green-3</span>
+                        <span class="db -fc-green-4">-fc-green-4</span>
+                        <span class="db -fc-green-5">-fc-green-5</span>
+                        <span class="db -fc-green-6">-fc-green-6</span>
+                        <span class="db -fc-green-7">-fc-green-7</span>
+                        <span class="db -fc-green-8">-fc-green-8</span>
+                        <span class="db -fc-green-9">-fc-green-9</span>
+                    </div>
+                </div>
+                <h4>Opacities</h4>
+                <div class="fb fb-r fb-jc-v">
+                    <div class="pa-4">
+                        <h6 class="pb-4">Black</h6>
+                        <span class="db fc-black-01">fc-black-01</span>
+                        <span class="db fc-black-02">fc-black-02</span>
+                        <span class="db fc-black-05">fc-black-05</span>
+                        <span class="db fc-black-10">fc-black-10</span>
+                        <span class="db fc-black-20">fc-black-20</span>
+                        <span class="db fc-black-30">fc-black-30</span>
+                        <span class="db fc-black-40">fc-black-40</span>
+                        <span class="db fc-black-50">fc-black-50</span>
+                        <span class="db fc-black-60">fc-black-60</span>
+                        <span class="db fc-black-70">fc-black-70</span>
+                        <span class="db fc-black-80">fc-black-80</span>
+                        <span class="db fc-black-90">fc-black-90</span>
+                        <span class="db fc-black-100">fc-black-100</span>
+                    </div>
+                    <div class="pa-4 bg-black-90">
+                        <h6 class="pb-4 fc-white-0">White</h6>
+                        <span class="db fc-white-01">fc-white-01</span>
+                        <span class="db fc-white-02">fc-white-02</span>
+                        <span class="db fc-white-05">fc-white-05</span>
+                        <span class="db fc-white-10">fc-white-10</span>
+                        <span class="db fc-white-20">fc-white-20</span>
+                        <span class="db fc-white-30">fc-white-30</span>
+                        <span class="db fc-white-40">fc-white-40</span>
+                        <span class="db fc-white-50">fc-white-50</span>
+                        <span class="db fc-white-60">fc-white-60</span>
+                        <span class="db fc-white-70">fc-white-70</span>
+                        <span class="db fc-white-80">fc-white-80</span>
+                        <span class="db fc-white-90">fc-white-90</span>
+                        <span class="db fc-white-100">fc-white-100</span>
+                    </div>
+                    <div class="pa-4">
+                        <h6 class="pb-4">Brown</h6>
+                        <span class="db fc-brown-01">fc-brown-01</span>
+                        <span class="db fc-brown-02">fc-brown-02</span>
+                        <span class="db fc-brown-05">fc-brown-05</span>
+                        <span class="db fc-brown-10">fc-brown-10</span>
+                        <span class="db fc-brown-20">fc-brown-20</span>
+                        <span class="db fc-brown-30">fc-brown-30</span>
+                        <span class="db fc-brown-40">fc-brown-40</span>
+                        <span class="db fc-brown-50">fc-brown-50</span>
+                        <span class="db fc-brown-60">fc-brown-60</span>
+                        <span class="db fc-brown-70">fc-brown-70</span>
+                        <span class="db fc-brown-80">fc-brown-80</span>
+                        <span class="db fc-brown-90">fc-brown-90</span>
+                        <span class="db fc-brown-100">fc-brown-100</span>
+                    </div>
+                    <div class="pa-4">
+                        <h6 class="pb-4">Blue</h6>
+                        <span class="db fc-blue-01">fc-blue-01</span>
+                        <span class="db fc-blue-02">fc-blue-02</span>
+                        <span class="db fc-blue-05">fc-blue-05</span>
+                        <span class="db fc-blue-10">fc-blue-10</span>
+                        <span class="db fc-blue-20">fc-blue-20</span>
+                        <span class="db fc-blue-30">fc-blue-30</span>
+                        <span class="db fc-blue-40">fc-blue-40</span>
+                        <span class="db fc-blue-50">fc-blue-50</span>
+                        <span class="db fc-blue-60">fc-blue-60</span>
+                        <span class="db fc-blue-70">fc-blue-70</span>
+                        <span class="db fc-blue-80">fc-blue-80</span>
+                        <span class="db fc-blue-90">fc-blue-90</span>
+                        <span class="db fc-blue-100">fc-blue-100</span>
+                    </div>
+                    <div class="pa-4">
+                        <h6 class="pb-4">Purple</h6>
+                        <span class="db fc-purple-01">fc-purple-01</span>
+                        <span class="db fc-purple-02">fc-purple-02</span>
+                        <span class="db fc-purple-05">fc-purple-05</span>
+                        <span class="db fc-purple-10">fc-purple-10</span>
+                        <span class="db fc-purple-20">fc-purple-20</span>
+                        <span class="db fc-purple-30">fc-purple-30</span>
+                        <span class="db fc-purple-40">fc-purple-40</span>
+                        <span class="db fc-purple-50">fc-purple-50</span>
+                        <span class="db fc-purple-60">fc-purple-60</span>
+                        <span class="db fc-purple-70">fc-purple-70</span>
+                        <span class="db fc-purple-80">fc-purple-80</span>
+                        <span class="db fc-purple-90">fc-purple-90</span>
+                        <span class="db fc-purple-100">fc-purple-100</span>
+                    </div>
+                    <div class="pa-4">
+                        <h6 class="pb-4">Red</h6>
+                        <span class="db fc-red-01">fc-red-01</span>
+                        <span class="db fc-red-02">fc-red-02</span>
+                        <span class="db fc-red-05">fc-red-05</span>
+                        <span class="db fc-red-10">fc-red-10</span>
+                        <span class="db fc-red-20">fc-red-20</span>
+                        <span class="db fc-red-30">fc-red-30</span>
+                        <span class="db fc-red-40">fc-red-40</span>
+                        <span class="db fc-red-50">fc-red-50</span>
+                        <span class="db fc-red-60">fc-red-60</span>
+                        <span class="db fc-red-70">fc-red-70</span>
+                        <span class="db fc-red-80">fc-red-80</span>
+                        <span class="db fc-red-90">fc-red-90</span>
+                        <span class="db fc-red-100">fc-red-100</span>
+                    </div>
+                    <div class="pa-4">
+                        <h6 class="pb-4">Pink</h6>
+                        <span class="db fc-pink-01">fc-pink-01</span>
+                        <span class="db fc-pink-02">fc-pink-02</span>
+                        <span class="db fc-pink-05">fc-pink-05</span>
+                        <span class="db fc-pink-10">fc-pink-10</span>
+                        <span class="db fc-pink-20">fc-pink-20</span>
+                        <span class="db fc-pink-30">fc-pink-30</span>
+                        <span class="db fc-pink-40">fc-pink-40</span>
+                        <span class="db fc-pink-50">fc-pink-50</span>
+                        <span class="db fc-pink-60">fc-pink-60</span>
+                        <span class="db fc-pink-70">fc-pink-70</span>
+                        <span class="db fc-pink-80">fc-pink-80</span>
+                        <span class="db fc-pink-90">fc-pink-90</span>
+                        <span class="db fc-pink-100">fc-pink-100</span>
+                    </div>
+                    <div class="pa-4">
+                        <h6 class="pb-4">Orange</h6>
+                        <span class="db fc-orange-01">fc-orange-01</span>
+                        <span class="db fc-orange-02">fc-orange-02</span>
+                        <span class="db fc-orange-05">fc-orange-05</span>
+                        <span class="db fc-orange-10">fc-orange-10</span>
+                        <span class="db fc-orange-20">fc-orange-20</span>
+                        <span class="db fc-orange-30">fc-orange-30</span>
+                        <span class="db fc-orange-40">fc-orange-40</span>
+                        <span class="db fc-orange-50">fc-orange-50</span>
+                        <span class="db fc-orange-60">fc-orange-60</span>
+                        <span class="db fc-orange-70">fc-orange-70</span>
+                        <span class="db fc-orange-80">fc-orange-80</span>
+                        <span class="db fc-orange-90">fc-orange-90</span>
+                        <span class="db fc-orange-100">fc-orange-100</span>
+                    </div>
+                    <div class="pa-4">
+                        <h6 class="pb-4">Yellow</h6>
+                        <span class="db fc-yellow-01">fc-yellow-01</span>
+                        <span class="db fc-yellow-02">fc-yellow-02</span>
+                        <span class="db fc-yellow-05">fc-yellow-05</span>
+                        <span class="db fc-yellow-10">fc-yellow-10</span>
+                        <span class="db fc-yellow-20">fc-yellow-20</span>
+                        <span class="db fc-yellow-30">fc-yellow-30</span>
+                        <span class="db fc-yellow-40">fc-yellow-40</span>
+                        <span class="db fc-yellow-50">fc-yellow-50</span>
+                        <span class="db fc-yellow-60">fc-yellow-60</span>
+                        <span class="db fc-yellow-70">fc-yellow-70</span>
+                        <span class="db fc-yellow-80">fc-yellow-80</span>
+                        <span class="db fc-yellow-90">fc-yellow-90</span>
+                        <span class="db fc-yellow-100">fc-yellow-100</span>
+                    </div>
+                    <div class="pa-4">
+                        <h6 class="pb-4">Green</h6>
+                        <span class="db fc-green-01">fc-green-01</span>
+                        <span class="db fc-green-02">fc-green-02</span>
+                        <span class="db fc-green-05">fc-green-05</span>
+                        <span class="db fc-green-10">fc-green-10</span>
+                        <span class="db fc-green-20">fc-green-20</span>
+                        <span class="db fc-green-30">fc-green-30</span>
+                        <span class="db fc-green-40">fc-green-40</span>
+                        <span class="db fc-green-50">fc-green-50</span>
+                        <span class="db fc-green-60">fc-green-60</span>
+                        <span class="db fc-green-70">fc-green-70</span>
+                        <span class="db fc-green-80">fc-green-80</span>
+                        <span class="db fc-green-90">fc-green-90</span>
+                        <span class="db fc-green-100">fc-green-100</span>
+                    </div>
+                </div>
+                    </div>
+                        <h4 class="pb-4 br-b-1 br-black-70">Font families</h4>
+                <div class="br-b-2 pv-4">
+            
+                <span class="db pa-4 ff-sans">.ff-sans { font-family: sans-serif; }</span>
+                <span class="db pa-4 ff-serif">.ff-serif { font-family: serif; }</span>
+                <span class="db pa-4 ff-mono">.ff-mono { font-family: mono; }</span>
+                    </div>
+                        <h4 class="pb-4 br-b-1 br-black-70">Font styles</h4>
+                <div class="br-b-2 pv-4">
+            
+                <span class="db pa-4 fs-i">.fs-i { font-style: italic; }</span>
+                <span class="db pa-4 fs-n">.fs-n { font-style: normal; }</span>
+                    </div>
+                        <h4 class="pb-4 br-b-1 br-black-70">Font sizes</h4>
+                <div class="br-b-2 pv-4">
+            
+                <span class="db -fs-3">-fs-3</span>
+                <span class="db -fs-2">-fs-2</span>
+                <span class="db -fs-1">-fs-1</span>
+                <span class="db fs-0">&nbsp;fs-0 <em>(1 rem)</em></span>
+                <span class="db fs-1">&nbsp;fs-1</span>
+                <span class="db fs-2">&nbsp;fs-2</span>
+                <span class="db fs-3">&nbsp;fs-3</span>
+                <span class="db fs-4">&nbsp;fs-4</span>
+                <span class="db fs-5">&nbsp;fs-5</span>
+                <span class="db fs-6">&nbsp;fs-6</span>
+                <span class="db fs-7">&nbsp;fs-7</span>
+                <span class="db fs-8">&nbsp;fs-8</span>
+                <span class="db fs-9">&nbsp;fs-9</span>
+                    </div>
+                        <h4 class="pb-4 br-b-1 br-black-70">Font weights</h4>
+                <div class="br-b-2 pv-4">
+            
+                <p>The selected font may not support every weight.</p>
+                <span class="db fs-2 fw-100"> fw-100</span>
+                <span class="db fs-2 fw-200"> fw-200</span>
+                <span class="db fs-2 fw-300"> fw-300</span>
+                <span class="db fs-2 fw-400"> fw-400</span>
+                <span class="db fs-2 fw-500"> fw-500</span>
+                <span class="db fs-2 fw-600"> fw-600</span>
+                <span class="db fs-2 fw-700"> fw-700</span>
+                <span class="db fs-2 fw-800"> fw-800</span>
+                <span class="db fs-2 fw-900"> fw-900</span>
+                    </div>
+                    </main>
+
+    <footer class="tr mv-12 pv-8 br-t-1 br-black w-full mx-w-full">
+        <div class="fl-r">
+            <em>A project by @indgy</em>
+        </div>
+        <nav class="fl-l">
+            &laquo; <a class="dib pr-3" href="index.html">Index</a>
+            <a class="dib pr-3" href="#synopsis">Synopsis</a>
+            <a class="dib pr-3" href="#usage">Usage</a>
+                        <a class="dib pr-3" href="#examples">Examples</a>
+                    </nav>
+    </footer>
+
+</body>
+</html>

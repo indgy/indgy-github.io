@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="/2.min.css" />
+    <title>Flexbox</title>
+</head>
+<body class="ff-serif pa-8">
+
+    <header class="tl mv-8 pv-6 br-b-1 br-black mx-w-full">
+        <span class="dib"><span class="va-m fs-6 fw-100 fc-black-70">2</span><span class="fs-3"><em>css</em></span></span>
+        <nav>
+            &laquo; <a class="dib pr-3" href="index.html">Index</a>
+            <a class="dib pr-3" href="#synopsis">Synopsis</a>
+            <a class="dib pr-3" href="#usage">Usage</a>
+                    </nav>
+    </header>
+
+    <main>
+        <h1>Flexbox</h1>
+        
+                        <p>Flexbox supports media query modifiers (xs:, sm:, md:, lg:, xl:)</p>
+                        
+        <h2 id="synopsis">Synopsis</h2>
+        <dl>
+                                <dt>
+                fb                            </dt>
+            <dd>{<br>&emsp;display: flex;<br>}
+            </dd>
+                                <dt>
+                fb-[values]                                    <em class="fc-black-60">
+                        (<span class="tu">1</span> <span class="tu">1</span> <span class="tu">a</span>uto, 0 <span class="tu">1</span> auto, <span class="tu">1</span> <span class="tu">1</span> 0%, <span class="tu">n</span>one)                    </em>
+                            </dt>
+            <dd>{<br>&emsp;flex: [values];<br>}
+            </dd>
+                                <dt>
+                fb-ai-[align]                                    <em class="fc-black-60">
+                        (flex<span class="tu">-s</span>tart, flex<span class="tu">-e</span>nd, <span class="tu">c</span>enter, <span class="tu">b</span>aseline, st<span class="tu">r</span>etch)                    </em>
+                            </dt>
+            <dd>{<br>&emsp;align-items: [align];<br>}
+            </dd>
+                                <dt>
+                fb-as-[align]                                    <em class="fc-black-60">
+                        (flex<span class="tu">-s</span>tart, flex<span class="tu">-e</span>nd, <span class="tu">c</span>enter, <span class="tu">b</span>aseline, st<span class="tu">r</span>etch)                    </em>
+                            </dt>
+            <dd>{<br>&emsp;align-self: [align];<br>}
+            </dd>
+                                <dt>
+                fb-ac-[align]                                    <em class="fc-black-60">
+                        (flex<span class="tu">-s</span>tart, flex<span class="tu">-e</span>nd, <span class="tu">c</span>enter, space<span class="tu">-b</span>etween, space<span class="tu">-a</span>round, st<span class="tu">r</span>etch)                    </em>
+                            </dt>
+            <dd>{<br>&emsp;align-content: [align];<br>}
+            </dd>
+                                <dt>
+                fb-jc-[align]                                    <em class="fc-black-60">
+                        (flex<span class="tu">-s</span>tart, flex<span class="tu">-e</span>nd, <span class="tu">c</span>enter, space<span class="tu">-b</span>etween, space<span class="tu">-a</span>round, space-e<span class="tu">v</span>enly)                    </em>
+                            </dt>
+            <dd>{<br>&emsp;justify-content: [align];<br>}
+            </dd>
+                                <dt>
+                fb-[direction]                                    <em class="fc-black-60">
+                        (<span class="tu">c</span>olumn, <span class="tu">c</span>olumn<span class="tu">-r</span>everse, <span class="tu">r</span>ow, <span class="tu">r</span>ow<span class="tu">-r</span>everse)                    </em>
+                            </dt>
+            <dd>{<br>&emsp;flex-direction: [direction];<br>}
+            </dd>
+                                <dt>
+                fb-g-[value]                                    <em class="fc-black-60">
+                        (<span class="tu">0</span>, <span class="tu">1</span>)                    </em>
+                            </dt>
+            <dd>{<br>&emsp;flex-grow: [value];<br>}
+            </dd>
+                                <dt>
+                fb-s-[value]                                    <em class="fc-black-60">
+                        (<span class="tu">0</span>, <span class="tu">1</span>)                    </em>
+                            </dt>
+            <dd>{<br>&emsp;flex-shrink: [value];<br>}
+            </dd>
+                                <dt>
+                fb-[wrap]                                    <em class="fc-black-60">
+                        (<span class="tu">n</span>owrap, <span class="tu">w</span>rap, <span class="tu">w</span>rap<span class="tu">-r</span>everse)                    </em>
+                            </dt>
+            <dd>{<br>&emsp;flex-wrap: [wrap];<br>}
+            </dd>
+                                <dt>
+                fb-o-[order]                                    <em class="fc-black-60">
+                        (-<span class="tu">9</span><span class="tu">9</span><span class="tu">9</span><span class="tu">9</span>, <span class="tu">9</span><span class="tu">9</span><span class="tu">9</span><span class="tu">9</span><span class="tu">9</span>, <span class="tu">0</span>, <span class="tu">0</span>, <span class="tu">1</span>, <span class="tu">2</span>, <span class="tu">3</span>, <span class="tu">4</span>, <span class="tu">5</span>, <span class="tu">6</span>, <span class="tu">7</span>, <span class="tu">8</span>, <span class="tu">9</span>, <span class="tu">1</span><span class="tu">0</span>, <span class="tu">1</span><span class="tu">1</span>, <span class="tu">1</span><span class="tu">2</span>)                    </em>
+                            </dt>
+            <dd>{<br>&emsp;order: [order];<br>}
+            </dd>
+                </dl>
+
+        <h2 id="usage">Usage</h2>
+                <h3>Enable flexbox</h3>
+        <pre>fb</pre>
+                <h3>Flex</h3>
+        <pre>fb-a
+fb-i
+fb-1
+fb-n</pre>
+                <h3>Flex align items</h3>
+        <pre>fb-ai-s
+fb-ai-e
+fb-ai-c
+fb-ai-b
+fb-ai-r</pre>
+                <h3>Flex align self</h3>
+        <pre>fb-as-s
+fb-as-e
+fb-as-c
+fb-as-b
+fb-as-r</pre>
+                <h3>Flex align content</h3>
+        <pre>fb-ac-s
+fb-ac-e
+fb-ac-c
+fb-ac-b
+fb-ac-a
+fb-ac-r</pre>
+                <h3>Flex justify content</h3>
+        <pre>fb-jc-s
+fb-jc-e
+fb-jc-c
+fb-jc-b
+fb-jc-a
+fb-jc-v</pre>
+                <h3>Flex direction</h3>
+        <pre>fb-c
+fb-cr
+fb-r
+fb-rr</pre>
+                <h3>Flex grow</h3>
+        <pre>fb-g-0
+fb-g-1</pre>
+                <h3>Flex shrink</h3>
+        <pre>fb-s-0
+fb-s-1</pre>
+                <h3>Flex wrap</h3>
+        <pre>fb-n
+fb-w
+fb-wr</pre>
+                <h3>Flex order</h3>
+        <pre>fb-o-f
+fb-o-l
+fb-o-n
+fb-o-0
+fb-o-1
+fb-o-2
+fb-o-3
+fb-o-4
+fb-o-5
+fb-o-6
+fb-o-7
+fb-o-8
+fb-o-9
+fb-o-10
+fb-o-11
+fb-o-12</pre>
+        
+            </main>
+
+    <footer class="tr mv-12 pv-8 br-t-1 br-black w-full mx-w-full">
+        <div class="fl-r">
+            <em>A project by @indgy</em>
+        </div>
+        <nav class="fl-l">
+            &laquo; <a class="dib pr-3" href="index.html">Index</a>
+            <a class="dib pr-3" href="#synopsis">Synopsis</a>
+            <a class="dib pr-3" href="#usage">Usage</a>
+                    </nav>
+    </footer>
+
+</body>
+</html>
